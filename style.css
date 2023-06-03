@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bgdark.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    min-height: 100vh;
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.logo {
+    margin: 0 auto;
+    width: 45%;
+}
+
+.menu {
+    height: auto;
+    width: auto;
+}
+
+.button {
+    background-color: rgba(177, 177, 177, 0.3);
+    border-radius: 1.5rem;
+    display: inline-block;
+    border: none;
+    color: #ffffff;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    margin: 4% 4% 0;
+    width: 300px;
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000000;
+}
+
+.button:active {
+    transform: scale(0.86);
+}
+
+
+
+/*.button::before,.button::after
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+
+}
+
+.button.aimate::before
+{
+    top: -70%;
+    background-image: radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, transparent 20% #ffffff 20%, transparent 30%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ffffff 15%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),;
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
+    background-position: 5% 90%,10% 90%,10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    animation: topBubbles 0.6s ease-in-out infinite;
+}
+
+@keyframes topBubbles {
+
+    50%{
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100%{
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 50%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.button.animate::after
+{
+    bottom: -70%;
+    background-image:radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ffffff 15%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 10% 0%,30% 10%,55% 0%, 70% 0%, 85% 0%, 70% 0%, 70% 0%;
+    animation: bottomBubbles 0.6s ease-in-out infinite;
+}
+
+@keyframes bottomBubbles {
+
+    50%{
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100%{
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}*/
+
+.buttons {
+    display: flex;
+    width: 600px;
+    gap: 10px;
+    --b: 5px;
+    /* the border thickness */
+    --h: 1.6em;
+    /* the height */
+    margin: 2% auto 10%;
+}
+
+.buttons button {
+    border-radius: 1.7rem;
+    --_c: #ffffff;
+    flex: calc(0.8 + var(--_s, 0));
+    min-width: 0;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 40px;
+    font-weight: 600;
+    height: var(--h);
+    cursor: pointer;
+    color: var(--_c);
+    border: 2px solid var(--_c);
+    background:
+        rgba(177, 177, 177, 0.3);
+    clip-path: polygon(0 0, 94% 0, calc(100% - 0.577*2em) 100%, 0 100%);
+    padding: 0 calc(0.288*var(--h)) 0 0;
+    margin: 0 calc(-0.288*var(--h)) 0 0;
+    box-sizing: border-box;
+    transition: flex .4s;
+
+}
+
+.buttons button+button {
+    --_c: #000000;
+    flex: calc(.75 + var(--_s, 0));
+    background:
+        rgba(177, 177, 177, 0.3);
+    clip-path: polygon(calc(0.670*var(--h)) 0, 100% 0, 100% 100%, 0 170%);
+    margin: 0 0 0 calc(-0.288*var(--h));
+    padding: 0 0 0 calc(0.288*var(--h));
+}
+
+.buttons button:focus-visible {
+    outline-offset: calc(-2*var(--b));
+    outline: calc(var(--b)/2) solid #000;
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons button:focus-visible+button {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons button:has(+ button:focus-visible) {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover,
+button:active:not(:focus-visible) {
+    --_s: .75;
+}
+
+button:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #fff;
+}
+
+.line {
+    background-color: rgba(177, 177, 177);
+    color: rgba(177, 177, 177);
+}
+
+footer
+{
+    margin-top: 15%;
+    text-align: center;
+}
+
+.copyright {
+    margin: 1%;
+    font-size: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
