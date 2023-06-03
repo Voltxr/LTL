@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(bgdark.png);
+    background-image: url(bgfulldark.png);
     background-size: cover;
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -160,7 +160,7 @@ body {
 }
 
 .buttons button+button {
-    --_c: #000000;
+    --_c: #ffffff;
     flex: calc(.75 + var(--_s, 0));
     background:
         rgba(177, 177, 177, 0.3);
